@@ -4,7 +4,7 @@ pipeline {
     stage('git pull') {
       steps {
         // https://github.com/gnu-gnu/gitops.git will replace by sed command before RUN
-        git url: 'https://github.com/gnu-gnu/gitops.git', branch: 'main'
+        git url: 'github.com/gnu-gnu/gitops.git', branch: 'main'
       }
     }
     stage('k8s deploy'){
